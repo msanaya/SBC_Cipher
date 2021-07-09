@@ -17,8 +17,10 @@ function connect() {
 }
 
 function count(sentence) {
-    const divided = sentence.split(" ").join("").length / 2;
-    return Math.floor(divided);
+    const divided = Math.floor(sentence.split(" ").join("").length / 2);
+    const nospaces = sentence.split(" ").join("")
+    const letter = nospaces.charAt(divided)
+    return letter + connect();
 }
 
 console.log(sentence)
