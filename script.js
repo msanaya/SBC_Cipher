@@ -9,6 +9,7 @@ submit.addEventListener("click", () => {
     connect(clearText);
     var cipher = (count(clearText));
     console.log(count(clearText));
+    displayCoded(cipher);
 });
 
 function firstAndLast(sentence) {
@@ -32,5 +33,13 @@ function count(sentence) {
     return letter + connect(sentence).split("").reverse().join("");
 };
 
+function displayCoded(cipher) {
+    document.getElementById("codedText").innerHTML = cipher
+}
+
+function reset() {
+    document.getElementById("clearText").value = "";
+    document.getElementById("codedText").innerHTML = " ";
+}
 
 
