@@ -6,6 +6,26 @@
     margin: 0px;
 }
 
+#title2{
+    font-size: 4em;
+    color: white;
+    margin: 20px;
+    padding-top: 2em;;
+    /* position: relative; */
+}
+
+.top{
+    height: 75vh;
+}
+
+span{
+    color: white;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+
+
 /* .slide-in-left {
 	animation: slide-in-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 3.5s
@@ -18,13 +38,18 @@
 } */
 
 .slide-in-right {
-	animation: slide-in-right 7.5s linear both;
+	animation: slide-in-right 6.5s linear both;
     
 }
 
 .slide-in-left{
     animation: slide-in-left 4s linear both;
-    animation-delay: 5s;
+    animation-delay: 6s;
+    
+}
+
+.typing-effect{
+    animation: typing  4s steps(44) 1s 1 normal both,
 }
 
 
@@ -45,24 +70,37 @@
  */
 @keyframes slide-in-right {
   0% {
-    transform: translateX(1000px);
+    transform: translateX(1300px);
+    max-height: 100%;
     /* opacity: 0; */
   }
   100% {
     transform: translateX(-1000px);
+    max-height: 0;
     /* opacity: 1; */
   }
 }
 
-/* ----------------------------------------
-animation slide-in-left
----------------------------------------- */
+
+/* animation slide-in-left */
+
 @keyframes slide-in-left {
     0% {
         transform: translateX(-1000px);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+/* animation typing */
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
 
