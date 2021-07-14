@@ -18,8 +18,8 @@
 
 .top{
     height: 75vh;
-    width: 75%;
-    border: 2px solid black;
+    width: 70%;
+    /* border: 2px solid black; */
     /* display: flex; */
     
 }
@@ -31,21 +31,39 @@ hr{
 
 .within{
     /* grid-area: main; */
-    border: 1px solid red;
+    border: 1px solid white;
+    background-color: white;
     float:right;
     /* height: 100%; */
 
 }
 
 .bottom{
-    margin: 20px;
+    margin: 20px 15px 20px 40px;
     border: 1px solid gold;
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-span{
+#instructions{
     color: black;
     /* overflow: hidden; */
-    margin: 20px;
+    margin: 20px 0px 20px 15px;
+    /* padding-left: 25px; */
+    
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-grow: .4;
+    
+    align-self:center;
+    /* margin: 0px; */
+}
+
+#clearText{
+    margin: 15px;
 }
 
 
@@ -66,18 +84,19 @@ span{
 
 
 .slide-in-right {
-	animation: slide-in-right 6.5s linear both;
+	animation: slide-in-right 6s linear both;
     
 }
 
 .slide-in-left{
-    animation: slide-in-left 4s linear both;
+    animation: slide-in-left 3s linear both;
     animation-delay: 6s;
     
 }
 
 .slide-in-bottom {
-	animation: slide-in-bottom 3s linear both;
+	animation: slide-in-bottom 4s linear both;
+    /* animation-delay: 3s; */
 }
 
 .typing-effect{
@@ -128,9 +147,12 @@ span{
  
 @keyframes slide-in-bottom {
   0% {
-    transform: translateY(-20px);
+    transform: translateY(25px);
     height: 0%;
     /* opacity: 0; */
+  }
+  2% {
+      height: 50%;
   }
   100% {
     transform: translateY(-300px);
@@ -174,13 +196,20 @@ background: -moz-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%,
 /* background: -webkit-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%, 80%, 1) 25%, hsla(203, 88%, 80%, 1) 50%, hsla(250, 69%, 80%, 1) 75%, hsla(347, 92%, 80%, 1) 100%); */
     font-family: 'Space Mono', monospace;
     min-height: 100%;
-    min-width: ;
+    min-width: 100%;
     overflow: hidden;
 }
 
 html{
     height: 100%;
+    width: 100%;
 }
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+};
 
 
 
