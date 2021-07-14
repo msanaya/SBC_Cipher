@@ -50,4 +50,8 @@ function showPage() {
     document.body.classList.remove('js-loading');
 }
 
+function focusInput() {
+    document.getElementByID("instructions").focus();
+}
+
 
