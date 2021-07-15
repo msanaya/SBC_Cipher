@@ -40,31 +40,38 @@ hr{
 
 .bottom{
     margin: 0px 15px 20px 40px;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
+    padding-bottom: 10px;
+    border-bottom: 1px white;
+    border-left: 4px white;
+    border-style: none none solid double;
     width: 65%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* outline: 4px solid red; */
 }
 
 
 #instructions{
-    color: black;
+    color: #57b9f5;
+    font-size: 1.1em;
     /* overflow: hidden; */
-    margin: 0px 0px 20px 15px;
+    margin: 0px 0px 5px 15px;
     /* padding-left: 25px; */
     
     display: flex;
     /* flex-wrap: nowrap; */
-    flex-grow: .5;
-    justify-content: center;
+    flex-grow: .8;
+    justify-content: flex-end;
+    align-content: flex-start;
     /* align-self:center; */
     /* margin: 0px; */
 }
 
 #clearText{
-    margin: 0px 15px 15px 0px;
+    margin: 0px 15px 5px 0px;
     background-color: transparent;
     border-bottom: 2px solid white;
     border-top: transparent;
@@ -74,11 +81,14 @@ hr{
     height: 2em;
     width: 20em;
     outline: none !important;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Space Mono', monospace;
     caret-color: white;
     color: white;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     
 }
 
@@ -101,19 +111,19 @@ hr{
 
 
 .slide-in-right {
-	animation: slide-in-right 6s linear both;
+	animation: slide-in-right 5s linear both;
     
 }
 
 .slide-in-left{
     animation: slide-in-left 3s linear both;
-    animation-delay: 6s;
+    animation-delay: 5s;
     
 }
 
 .slide-in-bottom {
 	animation: slide-in-bottom 4s linear both;
-    /* animation-delay: 3s; */
+    /* a nimation-delay: 3s; */
 }
 
 .typing-effect{
