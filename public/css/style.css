@@ -6,19 +6,22 @@
     font-size: 7em;
     color: white;
     margin: 0px;
+    /* overflow-anchor: none; */
 }
 
 #title2{
     font-size: 4em;
     color: white;
     margin: 20px;
-    padding-top: 2em;;
+    padding-top: 2em;
+    /* overflow-anchor: none; */
     /* position: relative; */
 }
 
 .top{
-    height: 70vh;
+    height: 68vh;
     width: 70%;
+    overflow-anchor: none;
     /* border: 2px solid black; */
     /* display: flex; */
     
@@ -42,38 +45,58 @@ hr{
     margin: 0px 15px 20px 40px;
     /* border: 1px solid gold; */
     padding-bottom: 10px;
-    border-bottom: 1px white;
-    border-left: 4px white;
-    border-style: none none solid double;
-    width: 65%;
+    padding-right: 15px;
+    border-bottom: 1.5px solid white;
+    width: 55%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-content: center;
     /* outline: 4px solid red; */
 }
 
+.bottom-line{
+    /* display: flex; */
+    /* flex-direction:column; */
+    /* order: -1; */
+    /* border-right: 2px solid white; */
+    /* width: 10%; */
+    height: 570%;
+    float: left;
+    margin-left: 25px;
+    /* min-height: 15s0%; */
+    /* max-height: 100vh; */
+    /* margin: 0; */
+}
 
+.input-container{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 15px;
+    /* border-left: 2px solid white; */
+}
 #instructions{
-    color: #57b9f5;
-    font-size: 1.1em;
+    color: #FB9DB1;
+    font-size: 1.5em;
     /* overflow: hidden; */
     margin: 0px 0px 5px 15px;
-    /* padding-left: 25px; */
-    
+    /* border-left: 1px solid white; */
+    padding-left: 5px;
     display: flex;
     /* flex-wrap: nowrap; */
-    flex-grow: .8;
-    justify-content: flex-end;
+    /* flex-grow: .8; */
+    /* justify-content: flex-end; */
     align-content: flex-start;
     /* align-self:center; */
     /* margin: 0px; */
 }
 
 #clearText{
-    margin: 0px 15px 5px 0px;
+    margin: 0px 0px 5px 0px;
     background-color: transparent;
-    border-bottom: 2px solid white;
+    border-bottom: 3px solid white;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
@@ -90,6 +113,23 @@ hr{
     justify-content: center;
     align-content: center;
     
+}
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#submit{
+    display:flex;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#reset{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -116,13 +156,13 @@ hr{
 }
 
 .slide-in-left{
-    animation: slide-in-left 3s linear both;
-    animation-delay: 4s;
+    animation: slide-in-left 2s linear both;
+    animation-delay: 1s;
     
 }
 
 .slide-in-bottom {
-	animation: slide-in-bottom 4s linear both;
+	animation: slide-in-bottom 1s linear both;
     /* a nimation-delay: 3s; */
 }
 
@@ -222,9 +262,11 @@ background: -moz-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%,
 
 /* background: -webkit-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%, 80%, 1) 25%, hsla(203, 88%, 80%, 1) 50%, hsla(250, 69%, 80%, 1) 75%, hsla(347, 92%, 80%, 1) 100%); */
     font-family: 'Space Mono', monospace;
-    min-height: 100%;
-    min-width: 100%;
-    overflow: hidden;
+    /* height: 100vh;
+    min-width: 100%; */
+    margin: 0;
+    /* overflow: hidden; */
+    /* overflow-anchor: none; */
 }
 
 html{
@@ -232,11 +274,11 @@ html{
     width: 100%;
 }
 
-.js-loading *,
+/* .js-loading *,
 .js-loading *:before,
 .js-loading *:after {
     animation-play-state: paused !important;
-};
+}; */
 
 
 

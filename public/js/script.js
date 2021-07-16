@@ -42,13 +42,13 @@ function reset() {
     document.getElementById("codedText").innerHTML = " ";
 }
 
-document.body.classList.add('js-loading');
+// document.body.classList.add('js-loading');
 
-window.addEventListener("load", showPage);
+// window.addEventListener("load", showPage);
 
-function showPage() {
-    document.body.classList.remove('js-loading');
-}
+// function showPage() {
+//     document.body.classList.remove('js-loading');
+// }
 
 function focusInput() {
     document.getElementByID("instructions").focus();
