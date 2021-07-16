@@ -20,11 +20,15 @@
 
 .top{
     height: 68vh;
-    width: 70%;
-    overflow-anchor: none;
+    /* width: 70%; */
     /* border: 2px solid black; */
     /* display: flex; */
     
+}
+
+#left{
+    height: 68vh;
+    width: 70%;
 }
 
 hr{
@@ -47,7 +51,7 @@ hr{
     padding-bottom: 10px;
     padding-right: 15px;
     border-bottom: 1.5px solid white;
-    width: 55%;
+    /* width: 55%; */
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
@@ -130,6 +134,13 @@ hr{
 #reset{
     display: flex;
     flex-wrap: wrap;
+}
+
+#right{
+    float: right;
+    /* right: 0%; */
+    width: 25%;
+    /* z-index: 11; */
 }
 
 

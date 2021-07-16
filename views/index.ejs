@@ -16,30 +16,34 @@
 </head>
 
 <body>
-    <div class="top">
-        <!-- <h1 id="title1" class="slide-in-right"> Simple Basic Cipher</h1> -->
-        <h1 id="title2" class="slide-in-left"> Simple Basic Cipher</h1>
-        <hr class="slide-in-left" />
-        <section class="within slide-in-bottom"></section>
+    <div id="right">
+        <p>Coded Text</p>
+        <p id="codedText"></p>
+    </div>
+    <div id="left">
+        <div class="top">
+            <!-- <h1 id="title1" class="slide-in-right"> Simple Basic Cipher</h1> -->
+            <h1 id="title2" class="slide-in-left"> Simple Basic Cipher</h1>
+            <hr class="slide-in-left" />
+            <section class="within slide-in-bottom"></section>
+        </div>
+        <div class="bottom">
+            <!-- <section class="bottom-line">|</section> -->
+            <div>
+                <hr class="bottom-line" />
+            </div>
+            <div class="input-container">
+                <p id="instructions"><strong>W</strong>rite a sentence:</p>
+                <input type="text" id="clearText" autofocus>
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Cipher Up" id="submit">
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
     </div>
 
-    <div class="bottom">
-        <!-- <section class="bottom-line">|</section> -->
-        <div>
-            <hr class="bottom-line" />
-        </div>
 
-        <div class="input-container">
-
-            <p id="instructions"><strong>W</strong>rite a sentence:</p>
-            <input type="text" id="clearText" autofocus>
-        </div>
-        <div class="buttons">
-            <input type="submit" value="Cipher Up" id="submit">
-            <button id="reset" onclick="reset()">Reset</button>
-        </div>
-    </div>
-    <p id="codedText"></p>
 
     <script src="/js/script.js"></script>
 </body onload="focusInput()">
