@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
+/* ///////// LEFT SIDE //////////// */
 
+#left{
+    height: 68vh;
+    width: 70%;
+} 
+
+.top{
+    height: 68vh;
+    /* width: 70%; */
+    /* border: 2px solid black; */
+    /* display: flex; */
+    
+} 
 
 #title1{
     font-size: 7em;
@@ -12,37 +25,15 @@
 #title2{
     font-size: 4em;
     color: white;
-    margin: 20px;
+    margin: 0px 20px 20px 20px;
     padding-top: 2em;
     /* overflow-anchor: none; */
     /* position: relative; */
 }
 
-.top{
-    height: 68vh;
-    /* width: 70%; */
-    /* border: 2px solid black; */
-    /* display: flex; */
-    
-}
-
-#left{
-    height: 68vh;
-    width: 70%;
-}
-
 hr{
     background-color: white;
     border: 1px solid white;
-}
-
-.within{
-    /* grid-area: main; */
-    border: 1px solid white;
-    background-color: white;
-    float:right;
-    /* height: 100%; */
-
 }
 
 .bottom{
@@ -136,12 +127,32 @@ hr{
     flex-wrap: wrap;
 }
 
+
+/* ///////// RIGHT SIDE //////////// */
+
 #right{
     float: right;
     /* right: 0%; */
-    width: 25%;
+    width: 30%;
+    height: 100vh;
+    margin: 0;
     /* z-index: 11; */
 }
+
+.vertical-line{
+    /* grid-area: main; */
+    border: 1px solid white;
+    background-color: white;
+    float:left;
+    height: 100%;
+    /* position: absolute;
+    bottom: 0; */
+    
+
+}
+
+
+
 
 
 
@@ -172,9 +183,13 @@ hr{
     
 }
 
-.slide-in-bottom {
+/* .slide-in-bottom {
 	animation: slide-in-bottom 1s linear both;
-    /* a nimation-delay: 3s; */
+    animation-delay: 3s;
+} */
+
+.slide-in-bottom {
+	animation: slide-in-bottom 3s ease-in both;
 }
 
 .typing-effect{
@@ -223,21 +238,31 @@ hr{
  animation slide-in-bottom
  ---------------------------------------- */
  
-@keyframes slide-in-bottom {
+/* @keyframes slide-in-bottom {
   0% {
-    transform: translateY(25px);
+    transform: translateY(0px);
     height: 0%;
     /* opacity: 0; */
-  }
+  /* }
   2% {
       height: 50%;
   }
   100% {
-    transform: translateY(-300px);
-    height: 150%;
-    /* opacity: 1; */
+    transform: translateY(-250px);
+    height: 100%;
+    opacity: 1; */
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(900px);
+    
+  }
+  100% {
+    transform: translateY(0);
+    
   }
 }
+
 
 
 /* animation slide-in-left */
@@ -273,16 +298,17 @@ background: -moz-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%,
 
 /* background: -webkit-linear-gradient(90deg, hsla(54, 100%, 80%, 1) 0%, hsla(69, 80%, 80%, 1) 25%, hsla(203, 88%, 80%, 1) 50%, hsla(250, 69%, 80%, 1) 75%, hsla(347, 92%, 80%, 1) 100%); */
     font-family: 'Space Mono', monospace;
-    /* height: 100vh;
-    min-width: 100%; */
+    height: 100%; 
+    /* min-width: 100%; */
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* overflow-anchor: none; */
 }
 
 html{
     height: 100%;
     width: 100%;
+    
 }
 
 /* .js-loading *,
