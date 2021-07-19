@@ -23,7 +23,7 @@ function flip(sentence) {
 }
 
 function connect(sentence) {
-    return sentence + flip(sentence);
+    return sentence.split(" ").join("") + flip(sentence);
 }
 
 function count(sentence) {

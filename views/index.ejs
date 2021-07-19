@@ -18,8 +18,8 @@
 <body>
     <div id="right">
         <section class="vertical-line slide-in-bottom"></section>
-        <div>
-            <p id="right-cypher-title">Cypher Text</p>
+        <div class="slide-in-right">
+            <h2 id="right-cypher-title">Ciphertext</h2>
             <p id="codedText"></p>
         </div>
 
@@ -31,18 +31,14 @@
             <hr class="slide-in-left" />
 
         </div>
-        <div class="bottom">
-            <!-- <section class="bottom-line">|</section> -->
-            <div>
-                <hr class="bottom-line" />
-            </div>
+        <div class="bottom slide-in-left">
             <div class="input-container">
                 <p id="instructions"><strong>W</strong>rite a sentence:</p>
                 <input type="text" id="clearText" autofocus>
             </div>
-            <div class="buttons">
-                <input type="submit" value="Cipher Up" id="submit">
-                <button id="reset" onclick="reset()">Reset</button>
+            <div class="buttons-container">
+                <button id="submit" class="button">Cipher Up</button>
+                <button id="reset" class="button" onclick="reset()">Reset</button>
             </div>
         </div>
     </div>

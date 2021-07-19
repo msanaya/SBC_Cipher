@@ -8,7 +8,7 @@
 } 
 
 .top{
-    height: 68vh;
+    height: 60vh;
     /* width: 70%; */
     /* border: 2px solid black; */
     /* display: flex; */
@@ -27,6 +27,7 @@
     color: white;
     margin: 0px 20px 20px 20px;
     padding-top: 2em;
+    text-align: center;
     /* overflow-anchor: none; */
     /* position: relative; */
 }
@@ -37,11 +38,11 @@ hr{
 }
 
 .bottom{
-    margin: 0px 15px 20px 40px;
+    margin: 0px 30px 20px 30px;
     /* border: 1px solid gold; */
-    padding-bottom: 10px;
-    padding-right: 15px;
-    border-bottom: 1.5px solid white;
+    /* padding-bottom: 10px; */
+    padding-right: 4em;
+    /* border-bottom: 1.5px solid white; */
     /* width: 55%; */
     display: flex;
     flex-wrap: wrap;
@@ -49,6 +50,7 @@ hr{
     /* justify-content: center; */
     align-content: center;
     /* outline: 4px solid red; */
+    overflow: hidden;
 }
 
 .bottom-line{
@@ -73,8 +75,8 @@ hr{
     /* border-left: 2px solid white; */
 }
 #instructions{
-    color: #FB9DB1;
-    font-size: 1.5em;
+    color: #87cdf8;
+    font-size: 1.8em;
     /* overflow: hidden; */
     margin: 0px 0px 5px 15px;
     /* border-left: 1px solid white; */
@@ -89,7 +91,7 @@ hr{
 }
 
 #clearText{
-    margin: 0px 0px 5px 0px;
+    margin: 0px 0px 15px 0px;
     background-color: transparent;
     border-bottom: 3px solid white;
     border-top: transparent;
@@ -107,25 +109,114 @@ hr{
     display: flex;
     justify-content: center;
     align-content: center;
-    
+   
 }
 
-.buttons{
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid whie;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+  font-family: 'Space Mono', monospace;
+}
+
+.buttons-container{
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-#submit{
+.button{
     display:flex;
-    flex-wrap: wrap;
-    align-self: center;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3em;
+    margin: 15px;
+    padding: 1.5px 15px 1.5px 15px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    box-shadow: 0 1px white,
+		-1px 0 white,
+		-1px 2px white,
+		-2px 1px white,
+		-2px 3px white,
+		-3px 2px white,
+		-3px 4px white,
+		-4px 3px white,
+		-4px 5px white,
+		-5px 4px white,
+		-5px 6px white,
+		-6px 5px white,
+		-6px 7px white,
+		-7px 6px white,
+		-7px 8px white,
+		-8px 7px white;
 }
 
-#reset{
-    display: flex;
-    flex-wrap: wrap;
+.button:hover{
+    transform:translate(10px,-10px);
+    box-shadow: 0 1px white,
+		-1px 0 white,
+		-1px 2px white,
+		-2px 1px white,
+		-2px 3px white,
+		-3px 2px white,
+		-3px 4px white,
+		-4px 3px white,
+		-4px 5px white,
+		-5px 4px white,
+		-5px 6px white,
+		-6px 5px white,
+		-6px 7px white,
+		-7px 6px white,
+		-7px 8px white,
+		-8px 7px white,
+        -15px 14px 4px #cccccc;
 }
+
+
+button:focus {
+    outline: none;
+    transform:translate(10px,-10px);
+    box-shadow: 0 1px white,
+		-1px 0 white,
+		-1px 2px white,
+		-2px 1px white,
+		-2px 3px white,
+		-3px 2px white,
+		-3px 4px white,
+		-4px 3px white,
+		-4px 5px white,
+		-5px 4px white,
+		-5px 6px white,
+		-6px 5px white,
+		-6px 7px white,
+		-7px 6px white,
+		-7px 8px white,
+		-8px 7px white,
+        -15px 14px 4px #cccccc;
+}
+
+
+#submit:focus{
+    background-color: #b2eeb4;
+}
+
+#reset:focus
+{
+    background-color: #fb9da2;
+}
+
+
 
 
 /* ///////// RIGHT SIDE //////////// */
@@ -136,6 +227,7 @@ hr{
     width: 30%;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
     /* z-index: 11; */
 }
 
@@ -144,37 +236,43 @@ hr{
     border: 1px solid white;
     background-color: white;
     float:left;
-    height: 100%;
+    /* height: 100%; */
     /* position: absolute;
     bottom: 0; */
     
 
 }
 
+#right-cypher-title{
+    margin-left: 0px;
+    padding-left: 50px;
+    color: white;
+    font-size: 2.3em;
+    letter-spacing: .1em;
+    border-bottom: 1px solid white;
+}
+
+#codedText{
+    margin: 16px 22px 16px 22px;
+    padding-top: 50px;
+    font-family: Wingdings, 'Zapf Dingbats', sans-serif;
+    text-align: center;
+    color: white; 
+    font-size: 2em;
+    word-wrap: break-word;
+    align-content: center;
+    line-height: 1.5;
+}
 
 
+/* //////////////////////////////// */
+/* ///////// ANIMATIONS ////////// */
+/* //////////////////////////////////// */
 
 
-
-
-
-
-/* .slide-in-left {
-	animation: slide-in-left 2.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 3.5s
-} */
-
-/* 
 .slide-in-right {
-	-webkit-animation: slide-in-right 8s linear both;
-	        animation: slide-in-right 8s linear both;
-} */
-
-
-
-.slide-in-right {
-	animation: slide-in-right 5.2s linear both;
-    
+	animation: slide-in-right 1.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 2s;
 }
 
 .slide-in-left{
@@ -183,61 +281,43 @@ hr{
     
 }
 
-/* .slide-in-bottom {
-	animation: slide-in-bottom 1s linear both;
-    animation-delay: 3s;
-} */
-
 .slide-in-bottom {
-	animation: slide-in-bottom 3s ease-in both;
+	animation: slide-in-bottom 2.5s ease-in both;
 }
 
-.typing-effect{
-    animation: typing 1s steps(1) infinite;
+.slide-in-bottom2 {
+	animation: slide-in-bottom2 1.2s cubic-bezier(0.550, 0.085, 0.680, 0.530) 2s both;
 }
 
 
-
-
-
-
-/* ----------------------------------------------
+/* /* ----------------------------------------------
  * Generated by Animista on 2021-7-12 20:1:33
  * Licensed under FreeBSD License.
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
 
-/**
-* ----------------------------------------
- * animation slide-in-right
- * ----------------------------------------
- */
+/** */
+
+/* ----------------------------------------
+animation slide-in-right
+---------------------------------------- */
+
 @keyframes slide-in-right {
   0% {
-    transform: translateX(900px);
-    max-height: 100%;
-    opacity: 3%;
-  }
-  15%{
-      opacity: 30%
-  }
-  25% {
-      opacity: 60%;
-  }
-  40%{
-      opacity: 100%
+    transform: translateX(1000px);
+    opacity: 0;
   }
   100% {
-    transform: translateX(-1000px);
-    max-height: 0;
-    /* opacity: 100%; */
+    transform: translateX(0);
+    opacity: 1;
   }
 }
- /* ----------------------------------------
- animation slide-in-bottom
- ---------------------------------------- */
- 
+
+/* ----------------------------------------
+animation slide-in-bottom
+---------------------------------------- */
+
 /* @keyframes slide-in-bottom {
   0% {
     transform: translateY(0px);
@@ -254,15 +334,32 @@ hr{
 
 @keyframes slide-in-bottom {
   0% {
-    transform: translateY(900px);
+    transform: translateY(1100px);
+    height: 0%;
+    
+  }
+  100% {
+    transform: translateY(0px);
+    height: 100%
+  }
+}
+
+/* ----------------------------------------
+animation slide-in-bottom2
+---------------------------------------- */
+
+@keyframes slide-in-bottom2 {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
     
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
     
   }
 }
-
 
 
 /* animation slide-in-left */
